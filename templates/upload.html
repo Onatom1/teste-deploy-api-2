@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-center">Processamento de Imagem</h2>
+                <hr>
+                <form action="/process_image" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="file">Selecione uma imagem:</label>
+                        <input type="file" name="file" id="file" class="form-control">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Processar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
